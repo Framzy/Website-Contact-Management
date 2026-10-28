@@ -2,6 +2,20 @@
 
 A web application for managing contacts and addresses, featuring user authentication, contact search, and CRUD operations through a REST API.
 
+## Overview
+
+### Login & Register
+
+![Login](docs/screenshots/login.webp)
+
+![Register](docs/screenshots/register.webp)
+
+### Dashboard & Profile
+
+![Dashboard](docs/screenshots/dashboard.webp)
+
+![Profile](docs/screenshots/profile.webp)
+
 ## Features
 
 - **User authentication:** Register, log in, view and update the user profile, change the password, and log out.
