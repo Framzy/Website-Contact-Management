@@ -237,3 +237,8 @@ The main relationships are one-to-many: a `User` can have many `Contact` records
 - User passwords are hashed using `bcrypt`.
 - Protected endpoints validate tokens through authentication middleware.
 - Local environment files may contain sensitive configuration. Use placeholders in documentation and never commit real credentials to the repository.
+
+## Credits
+
+This app was created as part of the learning process for the “Programmer Zaman Now” class/tutorial. Many thanks to Mr. Eko Kurniawan Khannedy for the learning materials.
+_Note: The base code follows the PZN tutorial, with some modifications and improvements I made on my own regarding the input validation system, middleware architecture adjustments, and optimization during the deployment process to Vercel._

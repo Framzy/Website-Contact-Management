@@ -2,6 +2,20 @@
 
 Aplikasi web untuk mengelola kontak dan alamat, dengan autentikasi pengguna, pencarian kontak, serta operasi CRUD melalui REST API.
 
+## Overview
+
+### Login & Register
+
+![Login](docs/screenshots/login.webp)
+
+![Register](docs/screenshots/register.webp)
+
+### Dashboard & Profile
+
+![Dashboard](docs/screenshots/dashboard.webp)
+
+![Profile](docs/screenshots/profile.webp)
+
 ## Fitur
 
 - **Autentikasi pengguna:** registrasi, login, melihat dan memperbarui profil, mengganti kata sandi, serta logout.
@@ -223,3 +237,9 @@ Relasi utama: satu `User` memiliki banyak `Contact`, dan satu `Contact` memiliki
 - Kata sandi pengguna di-hash menggunakan `bcrypt`.
 - Endpoint yang dilindungi memeriksa token melalui middleware autentikasi.
 - File environment lokal berisi konfigurasi sensitif; gunakan placeholder di dokumentasi dan jangan memasukkan kredensial asli ke repository.
+
+## Credits
+
+Aplikasi ini dibuat sebagai bagian dari proses pembelajaran dari kelas/tutorial Programmer Zaman Now. Terima kasih banyak kepada Pak Eko Kurniawan Khannedy atas materi pembelajarannya.
+
+_Note: Kode dasar mengikuti tutorial PZN, dengan beberapa modifikasi dan improvisasi mandiri dari saya pribadi terkait sistem validasi input, penyesuaian arsitektur middleware, serta optimalisasi saat proses deployment ke Vercel._
