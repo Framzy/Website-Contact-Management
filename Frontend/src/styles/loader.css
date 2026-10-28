@@ -1,0 +1,42 @@
+.loader {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top-color: var(--loader-color, #ffa516);
+  animation: spin 1s linear infinite;
+}
+
+/* Browser dengan dukungan -webkit-mask akan tampil lebih halus */
+@supports (-webkit-mask: radial-gradient(red, blue)) {
+  .loader {
+    border: none;
+    background: radial-gradient(
+          farthest-side,
+          var(--loader-color, #ffa516) 94%,
+          #0000
+        )
+        top/8px 8px no-repeat,
+      conic-gradient(#0000 30%, var(--loader-color, #ffa516));
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      #0000 calc(100% - 8px),
+      #000 0
+    );
+    mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+    animation: rotate 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
