@@ -14,7 +14,7 @@ export default function UserRegister() {
     userRegister,
     "/login",
     "User registered successfully",
-    "Failed to register user. Please try again."
+    "Failed to register user. Please try again.",
   );
 
   async function handleSubmit(e) {
